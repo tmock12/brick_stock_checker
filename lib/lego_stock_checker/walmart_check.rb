@@ -1,7 +1,7 @@
 require 'lego_stock_checker/base_check'
 
 module LegoStockChecker
-  class WalmartCheck< BaseCheck
+  class WalmartCheck < BaseCheck
     def in_stock?
       !page.at_css('.btn-out-of-stock') &&
         !page.at_css('.outofStockMsg') &&
