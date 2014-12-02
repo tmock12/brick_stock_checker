@@ -9,7 +9,13 @@ module LegoStockChecker
 
     def self.in_stock?(url)
       return nil if url.blank?
-      new(url).in_stock?
+      new(url).stock_hash
+    end
+
+    def stock_hash
+      {}.tap do |h|
+        h[:in_stock] = in_stock?
+      end
     end
 
     def page
