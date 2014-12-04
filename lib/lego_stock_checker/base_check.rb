@@ -8,7 +8,7 @@ module LegoStockChecker
   class BaseCheck < Struct.new(:url)
 
     def self.in_stock?(url)
-      return nil if url.blank?
+      return {} if url.blank?
       new(url).stock_hash
     end
 
