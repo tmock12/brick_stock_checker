@@ -5,6 +5,7 @@ describe LegoStockChecker::AmazonCheck do
 
   context 'when in stock' do
     describe '#in_stock?' do
+      let(:price) { 55.47 }
       let(:html_file) { 'amazon-is.html' }
       it_behaves_like "in stock"
     end

@@ -6,6 +6,7 @@ describe LegoStockChecker::TruCheck do
   context 'when in stock' do
     describe '#in_stock?' do
       let(:html_file) { 'tru-is.html' }
+      let(:price) { 74.99 }
       it_behaves_like "in stock"
     end
   end

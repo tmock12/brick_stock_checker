@@ -6,6 +6,7 @@ describe LegoStockChecker::WalmartCheck do
   context 'when in stock' do
     describe '#in_stock?' do
       let(:html_file) { 'walmart-is.html' }
+      let(:price) { 49.95 }
       it_behaves_like "in stock"
     end
   end

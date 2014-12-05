@@ -15,6 +15,7 @@ module LegoStockChecker
     def stock_hash
       {}.tap do |h|
         h[:in_stock] = in_stock?
+        h[:price] = price
       end
     end
 

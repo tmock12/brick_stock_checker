@@ -5,6 +5,7 @@ describe LegoStockChecker::LegoShopCheck do
 
   context 'when in stock' do
     describe '#in_stock?' do
+      let(:price) { 399.99 }
       let(:html_file) { 'lego-shop-is.html' }
       it_behaves_like "in stock"
     end
